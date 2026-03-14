@@ -3,9 +3,6 @@
 from data.auto_mpg import get_data
 import pandas as pd
 from sklearn.impute import SimpleImputer
-from sklearn.preprocessing import StandardScaler
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LinearRegression
 
 df = get_data()
 def preprocessing(data):
