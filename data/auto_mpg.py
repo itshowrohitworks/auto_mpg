@@ -4,7 +4,7 @@ import pandas as pd
 def get_data():
     conn = get_connection()
 
-    df = pd.read_sql("SELECT * FROM auto_mpg",conn)
+    df = pd.read_sql_query("SELECT * FROM auto_mpg",conn)
     
     conn.close()
     return df
