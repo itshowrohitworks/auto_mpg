@@ -11,6 +11,14 @@ X,y = preprocessing(data=df)
 # Train and Test splitting the Data:
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
+# Adding Feature Scaling: Standardization
+from sklearn.preprocessing import StandardScaler
+scalar = StandardScaler()
+scalar.fit(X_train)
+
+X_train = scalar.transform(X_train)
+X_test = scalar.transform(X_test)
+
 # Model Creation and Training:
 linear = LinearRegression()
 print(f"Training Linear Regression Model on our Data: {X_train.shape}\n")
