@@ -6,7 +6,6 @@ A modular, production-ready machine learning pipeline designed to predict vehicl
 # Project Directory Structure:
 
 ```
-text
 auto_mpg/
 ├── data/
 │   └── auto_mpg.py           # Core dataset ingestion utility
