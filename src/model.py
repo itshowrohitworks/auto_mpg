@@ -28,7 +28,7 @@ pred = linear.predict(X_test)
 
 # Evaluation Metrics:
 print("Metrics for Regression:")
-print("R2:", r2_score(y_test, pred))
-print("MAE:", mean_absolute_error(y_test, pred))
-print("MSE:", mean_squared_error(y_test,pred))
-print("RMSE:", root_mean_squared_error(y_test, pred))
+print(f"R2: {r2_score(y_test, pred):.4f}")
+print(f"MAE: {mean_absolute_error(y_test, pred):.4f}")
+print(f"MSE: {mean_squared_error(y_test,pred):.4f}")
+print(f"RMSE: {root_mean_squared_error(y_test, pred):.4f}")
